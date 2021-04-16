@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Landing Page Responsiva - Podcast</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <img class="navbar__logo" src="./assets/logo.svg" alt="Podcast logo">
+                <input type="checkbox" name="navbar__button" id="navbar__button">
+                <label for="navbar__button" class="navbar__button">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="navbar__menu">
+                    <li class="navbar__menu--item"><a href="#">Episodios</a></li>
+                    <li class="navbar__menu--item"><a href="#">Nosotros</a></li>
+                    <li class="navbar__menu--item"><a href="#">Entrevistas</a></li>
+                    <li class="navbar__menu--item"><a href="#">Tópicos</a></li>
+                </ul>
+            </nav>
+            <div class="header__description">
+                <h1 class="header__description--title">
+                    Hello <span class="world">world</span> pale blue dot<span class="dot">.</span>
+                </h1>
+                <p class="header__description--info">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <button class="btn header__description--cta">Conocé más</button>
+            </div>
+        </header>
+    </div>
+
 </body>
+
 </html>

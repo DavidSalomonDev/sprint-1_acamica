@@ -1,0 +1,187 @@
+.navbar {
+    position: relative;
+    padding: 1.5em;
+    width: 100%;
+}
+
+.navbar__logo {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* Menu open once button is clicked */
+.navbar__menu {
+    display: none;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #0000EC;
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .3s ease-in-out;
+    list-style: none;
+}
+
+.navbar__menu--item {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar__menu--item:active {
+    background-color: #fff;
+}
+
+#navbar__button {
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+.fa-times {
+    display: none;
+}
+
+#navbar__button:checked~.navbar__menu {
+    display: block;
+    transform: scale(1);
+}
+
+#navbar__button:checked+label>i.fa-bars {
+    display: none;
+}
+
+#navbar__button:checked+label>i.fa-times {
+    display: block;
+}
+
+.navbar__button {
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.navbar__button i {
+    font-size: 2.4rem;
+}
+
+.header__description {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.header__description--title {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.header__description--title .world {
+    text-decoration: line-through;
+}
+
+.header__description--title .dot {
+    color: #0000EC;
+}
+
+.header__description--info {
+    width: 75%;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2;
+    word-wrap: break-word;
+}
+
+.header__description--cta {
+    cursor: pointer;
+    width: 100%;
+    background-color: #00F3BB;
+    margin: 3rem 0;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+}
+
+@media (min-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__button,
+    #navbar__button {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        padding: 1rem 0;
+        width: 100%;
+        font-family: 'IBM Plex Mono', sans-serif;
+        color: #060A24;
+        background-color: transparent;
+        font-size: 1.6rem;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__menu--item {
+        padding: 0 2rem;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__menu--item:hover {
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #00F3BB;
+        letter-spacing: 0;
+        text-decoration: line-through;
+        transform: scale(1.05);
+    }
+
+    .navbar__menu--item:active {
+        color: rgba(6, 10, 36, 0.56);
+        transform: scale(1);
+    }
+
+    .header__description {
+        padding: 5rem;
+    }
+
+    .header__description--title {
+        max-width: 75%;
+        word-wrap: break-word;
+        font-size: 6.4rem;
+        font-weight: 500;
+    }
+
+    .header__description--info {
+        font-size: 2.4rem;
+    }
+
+    .header__description--cta,
+    .btn {
+        width: 30%;
+        background-image: linear-gradient(225deg, #0000FE, #00F0B8, #00F0B8);
+        background-size: 200%;
+        transform: scale(1);
+        transition: all .3s ease-in;
+    }
+
+    .header__description--cta:hover {
+        background-position: right;
+        color: #fff;
+        transform: scale(1.05);
+    }
+}
