@@ -9,6 +9,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/logo.svg">
     <title>Landing Page Responsiva - Podcast</title>
 </head>
 
@@ -23,7 +24,7 @@
                     <i class="fas fa-times"></i>
                 </label>
                 <ul class="navbar__menu">
-                    <li class="navbar__menu--item"><a href="#">Episodios</a></li>
+                    <li class="navbar__menu--item"><a href="#episodes">Episodios</a></li>
                     <li class="navbar__menu--item"><a href="#">Nosotros</a></li>
                     <li class="navbar__menu--item"><a href="#">Entrevistas</a></li>
                     <li class="navbar__menu--item"><a href="#">Tópicos</a></li>
@@ -33,10 +34,28 @@
                 <h1 class="header__description--title">
                     Hello <span class="world">world</span> pale blue dot<span class="dot">.</span>
                 </h1>
-                <p class="header__description--info">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <p class="header__description--info">Un podcast que explora el mundo de la programación. Nuevos
+                    episodios, todos los jueves cada 15 días.</p>
                 <button class="btn header__description--cta">Conocé más</button>
             </div>
         </header>
+        <section class="episodes" id="episodes">
+            <h1 class="episodes__title">Episodios</h1>
+            <div class="episodes__podcast">
+                <iframe class="episodes__podcast--item"
+                    src="https://open.spotify.com/embed-podcast/episode/3EsOFjWxn6FaAnvzL2xJG2" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe class="episodes__podcast--item"
+                    src="https://open.spotify.com/embed-podcast/episode/3kdjttU6vHRK2OO3oHsyFV" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe class="episodes__podcast--item"
+                    src="https://open.spotify.com/embed-podcast/episode/2C0jETtN1QlGG28uBcXxO4" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe class="episodes__podcast--item"
+                    src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
     </div>
 
 </body>
