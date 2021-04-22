@@ -191,7 +191,7 @@
         
     }
 
-    .header__description--cta:hover {
+    .btn:hover,.header__description--cta:hover {
         background-position: right;
         color: #fff;
         transform: scale(1.05);

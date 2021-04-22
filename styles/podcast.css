@@ -1,0 +1,99 @@
+.podcast::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    background-image: linear-gradient(to right, #0000A3, #0000FF);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 110%;
+    display: block;
+    z-index: -100;
+}
+
+.podcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.podcast h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.btn {
+    margin: 4rem auto;
+    width: 90%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.footer p {
+    text-align: center;
+    font-family: 'IBM Plex Mono';
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.footer~* {
+    width: 100%;
+}
+
+.footer__social {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__social--icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .podcast::before {
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .podcast {
+        height: 45rem;
+    }
+
+    .btn {
+        width: 34rem;
+    }
+
+    .footer {
+        margin-top: 3rem;
+        margin-bottom: -1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .footer__social {
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .footer__social--icon {
+        margin: 0 2rem;
+        font-size: 1.8rem;
+    }
+
+}
