@@ -28,8 +28,10 @@
     text-transform: uppercase;
 }
 
-.navbar__menu--item:active {
+.navbar__menu--item:active, .navbar__menu--item:hover {
+    cursor: pointer;
     background-color: #fff;
+    color: #0000EC;
 }
 
 #navbar__button {

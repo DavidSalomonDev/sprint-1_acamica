@@ -3,36 +3,43 @@
 @import './episodes.css';
 @import './description.css';
 @import './guests.css';
+@import './topics.css';
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-body{
+body {
     background-color: #eee;
     font-weight: normal;
 }
 
 a {
-    color: inherit; 
+    color: inherit;
     text-decoration: inherit;
-  }
+}
 
-.container{
+.container {
     max-width: 128rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-.header, .episodes, .description,.guests{
+.header,
+.episodes,
+.description,
+.guests,
+.topics {
     position: relative;
     width: 100%;
 }

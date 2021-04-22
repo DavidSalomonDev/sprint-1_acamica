@@ -1,0 +1,42 @@
+.topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.topics h2 {
+    margin-left: 2rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.topics__icons {
+    display: flex;
+    max-width: 90%;
+    margin: 2rem auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topics__icons--icon {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.topics__icons--icon figcaption {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    .topics h2 {
+        margin-top: 4rem;
+        font-size: 4.8rem;
+    }
+
+    .topics__icons {
+        margin-top: 4rem;
+        flex-direction: row;
+        max-width: 90%;
+    }
+}

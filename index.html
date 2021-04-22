@@ -15,21 +15,21 @@
 
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header" id="header">
             <nav class="navbar">
-                <div class="wrapper">
-                    <img class="navbar__logo" src="./assets/logo.svg" alt="Podcast logo">
+
+                    <a href="#header"><img class="navbar__logo" src="./assets/logo.svg" alt="Podcast logo"></a>
                     <input type="checkbox" name="navbar__button" id="navbar__button">
                     <label for="navbar__button" class="navbar__button">
                         <i class="fas fa-bars"></i>
                         <i class="fas fa-times"></i>
                     </label>
-                </div>
+
                 <ul class="navbar__menu">
                     <li class="navbar__menu--item"><a href="#episodes">Episodios</a></li>
-                    <li class="navbar__menu--item"><a href="#">Nosotros</a></li>
-                    <li class="navbar__menu--item"><a href="#">Entrevistas</a></li>
-                    <li class="navbar__menu--item"><a href="#">Tópicos</a></li>
+                    <li class="navbar__menu--item"><a href="#us">Nosotros</a></li>
+                    <li class="navbar__menu--item"><a href="#description">Entrevistas</a></li>
+                    <li class="navbar__menu--item"><a href="#topics">Tópicos</a></li>
                 </ul>
             </nav>
             <div class="header__description">
@@ -58,7 +58,7 @@
                     allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </section>
-        <section class="description">
+        <section class="description" id="description">
             <div class="description__img">
                 <img src="./assets/phone.png" alt="Phone">
             </div>
@@ -76,7 +76,7 @@
 
             </div>
         </section>
-        <div class="guests">
+        <section class="guests" id="us">
             <h2>Invitadas/os estelares</h2>
             <div class="guests__images">
                 <img class="guests__images--img" src="./assets/grace-hopper.png" alt="Grace Hopper">
@@ -89,7 +89,29 @@
                     alt="Eniac">
                 <img class="guests__images--img" src="./assets/susan-kare.png" alt="Susan Kare">
             </div>
-        </div>
+        </section>
+        <section class="topics" id="topics">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="topics__icons">
+                <figure class="topics__icons--icon">
+                    <img src="./assets/icon1.svg" alt="Remoto">
+                    <figcaption>Trabajo Remoto</figcaption>
+                </figure>
+                <figure class="topics__icons--icon">
+                    <img src="./assets/icon2.svg" alt="Repensando">
+                    <figcaption>Repensando la programación</figcaption>
+                </figure>
+                <figure class="topics__icons--icon">
+                    <img src="./assets/icon3.svg" alt="Bases">
+                    <figcaption>Bases del código</figcaption>
+                </figure>
+                <figure class="topics__icons--icon">
+                    <img src="./assets/icon4.svg" alt="Seguridad">
+                    <figcaption>Seguridad informática</figcaption>
+                </figure>
+            </div>
+            
+        </section>
     </div>
 
 </body>
