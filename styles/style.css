@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
 @import "./header.css";
 @import './episodes.css';
+@import './description.css';
 
 *, *::before, *::after{
     margin: 0;
@@ -28,10 +29,9 @@ a {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
 }
 
-.header, .episodes{
+.header, .episodes, .description{
     position: relative;
     width: 100%;
 }

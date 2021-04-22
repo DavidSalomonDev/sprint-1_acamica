@@ -93,7 +93,7 @@
     word-wrap: break-word;
 }
 
-.header__description--cta {
+.header__description--cta, .btn {
     cursor: pointer;
     width: 100%;
     background-color: #00F3BB;
@@ -107,7 +107,12 @@
     border: none;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -181,6 +186,7 @@
         background-size: 200%;
         transform: scale(1);
         transition: all .3s ease-in;
+        
     }
 
     .header__description--cta:hover {
