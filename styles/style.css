@@ -4,6 +4,7 @@
 @import './description.css';
 @import './guests.css';
 @import './topics.css';
+@import './podcast.css';
 
 *,
 *::before,
@@ -39,7 +40,8 @@ a {
 .episodes,
 .description,
 .guests,
-.topics {
+.topics,
+.podcast {
     position: relative;
     width: 100%;
 }
