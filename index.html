@@ -1,152 +1,157 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
-<html lang="en">
+<html lang='en'>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" href="./assets/logo.svg">
-    <title>Landing Page Responsiva - Podcast</title>
-</head>
+    <head>
+        <meta charset='UTF-8'>
+        <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+        <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+        <link href='./styles/style.css' rel='stylesheet'>
+        <link href='./assets/logo.svg' rel='shortcut icon'>
+        <title>Landing Page Responsiva - Podcast</title>
+    </head>
 
-<body>
-    <div class="container">
-        <header class="header" id="header">
-            <nav class="navbar">
+    <body>
+        <div class='container'>
+            <header class='header' id='header'>
+                <div class='navbar--wrapper'>
+                    <nav class='navbar'>
 
-                    <a href="#header"><img class="navbar__logo" src="./assets/logo.svg" alt="Podcast logo"></a>
-                    <input type="checkbox" name="navbar__checkbox" class="navbar__checkbox" id="navbar__button">
-                    <label for="navbar__button" class="navbar__button">
-                        <div class="navbar--burger">
-                            <div class="line line--top"></div>
-                            <div class="line line--mid"></div>
-                            <div class="line line--bottom"></div>
-                        </div>
-                    </label>
+                        <a href='#header'><img alt='Podcast logo' class='navbar__logo' src='./assets/logo.svg'></a>
+                        <input class='navbar__checkbox' id='navbar__button' name='navbar__checkbox' type='checkbox'>
+                        <label class='navbar__button' for='navbar__button'>
+                            <div class='navbar--burger'>
+                                <div class='line line--top'></div>
+                                <div class='line line--mid'></div>
+                                <div class='line line--bottom'></div>
+                            </div>
+                        </label>
 
-                <ul class="navbar__menu">
-                    <li class="navbar__menu--item"><a href="#episodes">Episodios</a></li>
-                    <li class="navbar__menu--item"><a href="#us">Nosotros</a></li>
-                    <li class="navbar__menu--item"><a href="#description">Entrevistas</a></li>
-                    <li class="navbar__menu--item"><a href="#topics">Tópicos</a></li>
-                </ul>
-                <ul class="navbar__menu--desktop">
-                    <li class="navbar__menu--desktop--item"><a href="#episodes">Episodios</a></li>
-                    <li class="navbar__menu--desktop--item"><a href="#us">Nosotros</a></li>
-                    <li class="navbar__menu--desktop--item"><a href="#description">Entrevistas</a></li>
-                    <li class="navbar__menu--desktop--item"><a href="#topics">Tópicos</a></li>
-                </ul>
-            </nav>
-            <div class="header__description">
-                <h1 class="header__description--title">
-                    Hello <span class="world">world</span> pale blue dot<span class="dot">.</span>
-                </h1>
-                <p class="header__description--info">Un podcast que explora el mundo de la programación. Nuevos
-                    episodios, todos los jueves cada 15 días.</p>
-                <button class="btn header__description--cta">Conocé más</button>
-            </div>
-        </header>
-        <section class="episodes" id="episodes">
-            <h1 class="episodes__title">Episodios</h1>
-            <div class="episodes__podcast">
-                <iframe class="episodes__podcast--item"
-                    src="https://open.spotify.com/embed-podcast/episode/3EsOFjWxn6FaAnvzL2xJG2" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe class="episodes__podcast--item"
-                    src="https://open.spotify.com/embed-podcast/episode/3kdjttU6vHRK2OO3oHsyFV" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe class="episodes__podcast--item"
-                    src="https://open.spotify.com/embed-podcast/episode/2C0jETtN1QlGG28uBcXxO4" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe class="episodes__podcast--item"
-                    src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </section>
-        <section class="description" id="description">
-            <div class="description__img">
-                <img src="./assets/phone.png" alt="Phone">
-            </div>
-            <div class="description__info">
+                        <ul class='navbar__menu'>
+                            <li class='navbar__menu--item'><a href='#episodes'>Episodios</a></li>
+                            <li class='navbar__menu--item'><a href='#us'>Nosotros</a></li>
+                            <li class='navbar__menu--item'><a href='#description'>Entrevistas</a></li>
+                            <li class='navbar__menu--item'><a href='#topics'>Tópicos</a></li>
+                        </ul>
+                        <ul class='navbar__menu--desktop'>
+                            <li class='navbar__menu--desktop--item'><a href='#episodes'>Episodios</a></li>
+                            <li class='navbar__menu--desktop--item'><a href='#us'>Nosotros</a></li>
+                            <li class='navbar__menu--desktop--item'><a href='#description'>Entrevistas</a></li>
+                            <li class='navbar__menu--desktop--item'><a href='#topics'>Tópicos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class='header__description'>
+                    <h1 class='header__description--title'>
+                        Hello <span class='world'>world</span> pale blue dot<span class='dot'>.</span>
+                    </h1>
+                    <p class='header__description--info'>Un podcast que explora el mundo de la programación. Nuevos
+                        episodios, todos los jueves cada 15 días.</p>
+                    <button class='btn header__description--cta'>Conocé más</button>
+                </div>
+            </header>
+            <section class='episodes' id='episodes'>
+                <h1 class='episodes__title'>Episodios</h1>
+                <div class='episodes__podcast'>
+                    <iframe allow='encrypted-media'
+                            allowtransparency='true' class='episodes__podcast--item'
+                            src='https://open.spotify.com/embed-podcast/episode/3EsOFjWxn6FaAnvzL2xJG2'
+                    ></iframe>
+                    <iframe allow='encrypted-media'
+                            allowtransparency='true' class='episodes__podcast--item'
+                            src='https://open.spotify.com/embed-podcast/episode/3kdjttU6vHRK2OO3oHsyFV'
+                    ></iframe>
+                    <iframe allow='encrypted-media'
+                            allowtransparency='true' class='episodes__podcast--item'
+                            src='https://open.spotify.com/embed-podcast/episode/2C0jETtN1QlGG28uBcXxO4'
+                    ></iframe>
+                    <iframe allow='encrypted-media'
+                            allowtransparency='true' class='episodes__podcast--item'
+                            src='https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt'
+                    ></iframe>
+                </div>
+            </section>
+            <section class='description' id='description'>
+                <div class='description__img'>
+                    <img alt='Phone' src='./assets/phone.png'>
+                </div>
+                <div class='description__info'>
 
-                <h1>De dónde venimos</h1>
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position
-                    in
-                    the Universe, are challenged by this point of pale light. </p>
-                <br>
-                <p>
-                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
-                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                    <h1>De dónde venimos</h1>
+                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position
+                        in
+                        the Universe, are challenged by this point of pale light. </p>
+                    <br>
+                    <p>
+                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                        vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                </div>
+            </section>
+            <section class='guests' id='us'>
+                <h2>Invitadas/os estelares</h2>
+                <div class='guests__images'>
+                    <img alt='Grace Hopper' class='guests__images--img' src='./assets/grace-hopper.png'>
+                    <img alt='Katie Bouman' class='guests__images--img' src='./assets/Katie-Bouman.png'>
+                    <img alt='Margaret Hamilton' class='guests__images--img' src='./assets/Margaret_Hamilton.png'>
+                    <img alt='1950' class='guests__images--img'
+                         src='./assets/An E.R.A.Univac 1103 computer in the 1950s.png'
+                    >
+                    <img alt='Eniac'
+                         class='guests__images--img'
+                         src='./assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png'
+                    >
+                    <img alt='Susan Kare' class='guests__images--img' src='./assets/susan-kare.png'>
+                </div>
+            </section>
+            <section class='topics' id='topics'>
+                <h2>Algunos de nuestros temas</h2>
+                <div class='topics__icons'>
+                    <figure class='topics__icons--icon'>
+                        <img alt='Remoto' src='./assets/icon1.svg'>
+                        <figcaption>Trabajo Remoto</figcaption>
+                    </figure>
+                    <figure class='topics__icons--icon'>
+                        <img alt='Repensando' src='./assets/icon2.svg'>
+                        <figcaption>Repensando la programación</figcaption>
+                    </figure>
+                    <figure class='topics__icons--icon'>
+                        <img alt='Bases' src='./assets/icon3.svg'>
+                        <figcaption>Bases del código</figcaption>
+                    </figure>
+                    <figure class='topics__icons--icon'>
+                        <img alt='Seguridad' src='./assets/icon4.svg'>
+                        <figcaption>Seguridad informática</figcaption>
+                    </figure>
+                </div>
 
+            </section>
+            <section class='podcast'>
+                <div class='podcast__wrapper'>
+                    <h2>¿Querés las últimas novedades?</h2>
+                    <button class='btn'>Escuchá los episodios</button>
+                </div>
+            </section>
+            <footer class='footer'>
+                <p class='footer__description'>© 2021— Hello blue pale dot - davidsalomon</p>
+                <div class='footer__social'>
+                    <svg class='footer__social--icon'>
+                        <use xlink:href='./assets/sprite.svg#spotify'></use>
+                    </svg>
+                    <svg class='footer__social--icon'>
+                        <use xlink:href='./assets/sprite.svg#instagram'></use>
+                    </svg>
+                    <svg class='footer__social--icon'>
+                        <use xlink:href='./assets/sprite.svg#twitter'></use>
+                    </svg>
+                    <svg class='footer__social--icon'>
+                        <use xlink:href='./assets/sprite.svg#facebook'></use>
+                    </svg>
+                    <svg class='footer__social--icon'>
+                        <use xlink:href='./assets/sprite.svg#telegram'></use>
+                    </svg>
+                </div>
+            </footer>
+        </div>
 
-            </div>
-        </section>
-        <section class="guests" id="us">
-            <h2>Invitadas/os estelares</h2>
-            <div class="guests__images">
-                <img class="guests__images--img" src="./assets/grace-hopper.png" alt="Grace Hopper">
-                <img class="guests__images--img" src="./assets/Katie-Bouman.png" alt="Katie Bouman">
-                <img class="guests__images--img" src="./assets/Margaret_Hamilton.png" alt="Margaret Hamilton">
-                <img class="guests__images--img" src="./assets/An E.R.A.Univac 1103 computer in the 1950s.png"
-                    alt="1950">
-                <img class="guests__images--img"
-                    src="./assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-                    alt="Eniac">
-                <img class="guests__images--img" src="./assets/susan-kare.png" alt="Susan Kare">
-            </div>
-        </section>
-        <section class="topics" id="topics">
-            <h2>Algunos de nuestros temas</h2>
-            <div class="topics__icons">
-                <figure class="topics__icons--icon">
-                    <img src="./assets/icon1.svg" alt="Remoto">
-                    <figcaption>Trabajo Remoto</figcaption>
-                </figure>
-                <figure class="topics__icons--icon">
-                    <img src="./assets/icon2.svg" alt="Repensando">
-                    <figcaption>Repensando la programación</figcaption>
-                </figure>
-                <figure class="topics__icons--icon">
-                    <img src="./assets/icon3.svg" alt="Bases">
-                    <figcaption>Bases del código</figcaption>
-                </figure>
-                <figure class="topics__icons--icon">
-                    <img src="./assets/icon4.svg" alt="Seguridad">
-                    <figcaption>Seguridad informática</figcaption>
-                </figure>
-            </div>
-            
-        </section>
-        <section class="podcast">
-            <div class="podcast__wrapper">
-	            <h2>¿Querés las últimas novedades?</h2>
-	            <button class="btn">Escuchá los episodios</button>
-            </div>
-        </section>
-        <footer class="footer">
-            <p class="footer__description">© 2021— Hello blue pale dot - davidsalomon</p>
-            <div class="footer__social">
-                <svg class="footer__social--icon">
-                    <use xlink:href="./assets/sprite.svg#spotify"></use>
-                </svg>
-                <svg class="footer__social--icon">
-                    <use xlink:href="./assets/sprite.svg#instagram"></use>
-                </svg>
-                <svg class="footer__social--icon">
-                    <use xlink:href="./assets/sprite.svg#twitter"></use>
-                </svg>
-                <svg class="footer__social--icon">
-                    <use xlink:href="./assets/sprite.svg#facebook"></use>
-                </svg>
-                <svg class="footer__social--icon">
-                    <use xlink:href="./assets/sprite.svg#telegram"></use>
-                </svg>
-            </div>
-        </footer>
-    </div>
-
-</body>
+    </body>
 
 </html>

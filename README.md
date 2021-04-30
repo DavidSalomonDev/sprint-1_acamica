@@ -2,7 +2,9 @@
 
 ## Landing page responsiva
 
-El desafío está enfocado en el maquetado de la landing page de un canal de Podcast, siguiendo las guías visuales de una interfaz de usuario otorgada y desarrollando funcionalidades de reproducción de contenidos, navegación, compatibilidad con múltiples exploradores y dispositivos.
+El desafío está enfocado en el maquetado de la landing page de un canal de Podcast, siguiendo las guías visuales de una
+interfaz de usuario otorgada y desarrollando funcionalidades de reproducción de contenidos, navegación, compatibilidad
+con múltiples exploradores y dispositivos.
 
 ## Preparación
 
@@ -22,9 +24,10 @@ En este último paso, mi configuración será esto:
 }
 ```
 
-Así puedo editar cada elemento al tamaño necesario. 
+Así puedo editar cada elemento al tamaño necesario.
 
-También usaré `rem` como unidad de medida, correspondiente a 16px. Para no confundirme en el tamaño de los pixeles, lo convertiré a 10px usando este código:
+También usaré `rem` como unidad de medida, correspondiente a 16px. Para no confundirme en el tamaño de los pixeles, lo
+convertiré a 10px usando este código:
 
 ```css
 html{
@@ -40,14 +43,17 @@ Iconos se instalarán de `fontawesome` y la tipografía de `Google Fonts`.
 
 ## Desarrollo
 
-1. Dividir todas las secciones y desarrollarlas de manera individual, el CSS está separado en módulos, por lo que resulta más fácil distribuir las propiedades.
+1. Dividir todas las secciones y desarrollarlas de manera individual, el CSS está separado en módulos, por lo que
+   resulta más fácil distribuir las propiedades.
 2. Mi idea fue crear tantos div parents como fuera posible para poder tener los elementos separados de otros
 3. Estuve jugando con el tamaño de los elementos usando Firefox Developer edition
 
 ## Obstáculos
 
-1. Al principio, empecé el diseño por "Desktop-first" pero se venía complicando cuando intentaba aplicar media queries, así que empecé el proyecto desde cero y las media queries las hice para que se ajustaran al desktop.
-2. Aún no sé por qué la propiedad `justify-content: space-between` no funciona para mi navbar, a pesar de que tengo solo dos elementos parent.
+1. Al principio, empecé el diseño por "Desktop-first" pero se venía complicando cuando intentaba aplicar media queries,
+   así que empecé el proyecto desde cero y las media queries las hice para que se ajustaran al desktop.
+2. Aún no sé por qué la propiedad `justify-content: space-between` no funciona para mi navbar, a pesar de que tengo solo
+   dos elementos parent.
 3. Usar fontawesome genera muchos errores en la consola, así que descargué los iconos en SVG
 
 ## Conclusión
