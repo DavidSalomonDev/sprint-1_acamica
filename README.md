@@ -48,6 +48,7 @@ Iconos se instalarán de `fontawesome` y la tipografía de `Google Fonts`.
 
 1. Al principio, empecé el diseño por "Desktop-first" pero se venía complicando cuando intentaba aplicar media queries, así que empecé el proyecto desde cero y las media queries las hice para que se ajustaran al desktop.
 2. Aún no sé por qué la propiedad `justify-content: space-between` no funciona para mi navbar, a pesar de que tengo solo dos elementos parent.
+3. Usar fontawesome genera muchos errores en la consola, así que descargué los iconos en SVG
 
 ## Conclusión
 

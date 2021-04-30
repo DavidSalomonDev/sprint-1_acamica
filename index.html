@@ -1,13 +1,11 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/logo.svg">
     <title>Landing Page Responsiva - Podcast</title>
@@ -19,10 +17,13 @@
             <nav class="navbar">
 
                     <a href="#header"><img class="navbar__logo" src="./assets/logo.svg" alt="Podcast logo"></a>
-                    <input type="checkbox" name="navbar__button" id="navbar__button">
+                    <input type="checkbox" name="navbar__checkbox" class="navbar__checkbox" id="navbar__button">
                     <label for="navbar__button" class="navbar__button">
-                        <i class="fas fa-bars"></i>
-                        <i class="fas fa-times"></i>
+                        <div class="navbar--burger">
+                            <div class="line line--top"></div>
+                            <div class="line line--mid"></div>
+                            <div class="line line--bottom"></div>
+                        </div>
                     </label>
 
                 <ul class="navbar__menu">
@@ -30,6 +31,12 @@
                     <li class="navbar__menu--item"><a href="#us">Nosotros</a></li>
                     <li class="navbar__menu--item"><a href="#description">Entrevistas</a></li>
                     <li class="navbar__menu--item"><a href="#topics">Tópicos</a></li>
+                </ul>
+                <ul class="navbar__menu--desktop">
+                    <li class="navbar__menu--desktop--item"><a href="#episodes">Episodios</a></li>
+                    <li class="navbar__menu--desktop--item"><a href="#us">Nosotros</a></li>
+                    <li class="navbar__menu--desktop--item"><a href="#description">Entrevistas</a></li>
+                    <li class="navbar__menu--desktop--item"><a href="#topics">Tópicos</a></li>
                 </ul>
             </nav>
             <div class="header__description">
@@ -113,17 +120,29 @@
             
         </section>
         <section class="podcast">
-            <h2>¿Querés las últimas novedades?</h2>
-            <button class="btn">Escuchá los episodios</button>
+            <div class="podcast__wrapper">
+	            <h2>¿Querés las últimas novedades?</h2>
+	            <button class="btn">Escuchá los episodios</button>
+            </div>
         </section>
         <footer class="footer">
             <p class="footer__description">© 2021— Hello blue pale dot - davidsalomon</p>
             <div class="footer__social">
-                <i class="footer__social--icon fab fa-spotify"></i>
-                <i class="footer__social--icon fab fa-instagram"></i>
-                <i class="footer__social--icon fab fa-twitter"></i>
-                <i class="footer__social--icon fab fa-facebook"></i>
-                <i class="footer__social--icon fab fa-telegram"></i>
+                <svg class="footer__social--icon">
+                    <use xlink:href="./assets/sprite.svg#spotify"></use>
+                </svg>
+                <svg class="footer__social--icon">
+                    <use xlink:href="./assets/sprite.svg#instagram"></use>
+                </svg>
+                <svg class="footer__social--icon">
+                    <use xlink:href="./assets/sprite.svg#twitter"></use>
+                </svg>
+                <svg class="footer__social--icon">
+                    <use xlink:href="./assets/sprite.svg#facebook"></use>
+                </svg>
+                <svg class="footer__social--icon">
+                    <use xlink:href="./assets/sprite.svg#telegram"></use>
+                </svg>
             </div>
         </footer>
     </div>

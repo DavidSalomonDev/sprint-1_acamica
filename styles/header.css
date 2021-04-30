@@ -7,25 +7,30 @@
 .navbar__logo {
     width: 2.4rem;
     height: 2.4rem;
+    cursor: pointer;
 }
 
 /* Menu open once button is clicked */
 .navbar__menu {
     display: none;
     justify-content: center;
-    padding: 1rem 0;
     width: 100%;
     background-color: #0000EC;
     font-family: 'IBM Plex Mono', sans-serif;
     color: #fff;
     font-size: 1.6rem;
-    transition: all .3s ease-in-out;
     list-style: none;
+
+}
+
+.navbar__menu--desktop{
+    display: none;
 }
 
 .navbar__menu--item {
     padding: 1rem;
     text-transform: uppercase;
+    transition: all .3s;
 }
 
 .navbar__menu--item:active, .navbar__menu--item:hover {
@@ -39,21 +44,9 @@
     transition: all .3s ease-in-out;
 }
 
-.fa-times {
-    display: none;
-}
-
 #navbar__button:checked~.navbar__menu {
     display: block;
-    transform: scale(1);
-}
-
-#navbar__button:checked+label>i.fa-bars {
-    display: none;
-}
-
-#navbar__button:checked+label>i.fa-times {
-    display: block;
+    margin-top: 1rem;
 }
 
 .navbar__button {
@@ -64,12 +57,53 @@
     height: 2.4rem;
 }
 
-.navbar__button i {
-    font-size: 2.4rem;
+/*Adding Burger button*/
+
+.navbar--burger {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.line{
+    height: 10%;
+    width: 75%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line--top {
+    top: 25%;
+}
+
+.line--bottom {
+    transform: translate(-50%, -50%);
+    top: 75%;
+}
+
+.navbar__checkbox:checked~.navbar__button .navbar--burger .line--mid {
+    opacity: 0
+}
+.navbar__checkbox:checked~.navbar__button .navbar--burger .line--top {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #0000A3;
+}
+
+.navbar__checkbox:checked~.navbar__button .navbar--burger .line--bottom{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #0000A3;
+
 }
 
 .header__description {
-
     padding: 2rem;
 }
 
@@ -99,7 +133,7 @@
     cursor: pointer;
     width: 100%;
     background-color: #00F3BB;
-    margin: 3rem 0;
+    margin: 3rem auto;
     padding: 1.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -109,7 +143,7 @@
     border: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
 
     .wrapper{
         display: flex;
@@ -126,14 +160,23 @@
     #navbar__button {
         display: none;
     }
+.navbar__menu{
+	display: none;
+}
 
-    .navbar__menu {
+	#navbar__button:checked~.navbar__menu {
+		display: none;
+	}
+
+
+    .navbar__menu--desktop {
         display: flex;
-        width: 100%;
+	    list-style: none;
+        width: 125%;
+	    text-transform: uppercase;
         justify-content: center;
         position: absolute;
         padding: 1rem 0;
-        width: 100%;
         font-family: 'IBM Plex Mono', sans-serif;
         color: #060A24;
         background-color: transparent;
@@ -141,13 +184,13 @@
         transition: all .3s ease-in-out;
     }
 
-    .navbar__menu--item {
+    .navbar__menu--desktop--item {
         padding: 0 2rem;
         font-weight: 500;
         transition: all .3s ease-in-out;
     }
 
-    .navbar__menu--item:hover {
+    .navbar__menu--desktop--item:hover {
         font-family: 'IBM Plex Mono', sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -157,7 +200,7 @@
         transform: scale(1.05);
     }
 
-    .navbar__menu--item:active {
+    .navbar__menu--desktop--item:active {
         color: rgba(6, 10, 36, 0.56);
         transform: scale(1);
     }
