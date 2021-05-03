@@ -40,7 +40,7 @@
     width: 25rem;
     height: 22.5rem;
     margin: 1rem;
-
+    border: none;
 }
 
 .episodes__podcast--item:not(:last-child) {
