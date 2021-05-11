@@ -60,3 +60,9 @@ Iconos se instalarán de `fontawesome` y la tipografía de `Google Fonts`.
 
 1. Empezar por mobile design y luego usar media queries para adaptarlo a Desktop.
 2. Iframes pueden hacer tu código algo lento
+
+Puedes ver la presentación del proyecto en este link <https://www.canva.com/design/DAEeIXEovIc/PbnPmnHU_CdJn6tADXBmmg/view>
+
+El proyecto se encuentra en este link <https://sprint-1-acamica.vercel.app/>
+
+Link a GitHub <https://github.com/DavidSalomonDev/sprint-1_acamica>
